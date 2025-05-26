@@ -1,0 +1,38 @@
+EJECUTAR DESDE LINEA DE DOMANDOS
+
+1. Abrir Cmder
+2. Moverse a ruta: C:\Users\camilo.garzon\Documents\Performance Testing\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin
+3. Usar comando :
+    jmeter -n -t C:\Users\camilo.garzon\Documents\Performance Testing\apache-jmeter-5.6.3\Results\Test_Ejecucion_comandos.jmx -l C:\Users\camilo.garzon\Documents\Performance Testing\apache-jmeter-5.6.3\Results\Test_Ejecucion_comandos.csv
+    jmeter -n -t "C:\Users\camilo.garzon\Documents\Performance Testing\apache-jmeter-5.6.3\Results\Test_Ejecucion_comandos.jmx" -l "C:\Users\camilo.garzon\Documents\Performance Testing\apache-jmeter-5.6.3\Results\Test_Ejecucion_comandos.csv"
+    jmeter -n -t <test> -l <test log file>
+
+**************  Nota:
+    Busca "Editar las variables de entorno del sistema" en el menú de inicio de Windows.
+    Haz clic en "Variables de entorno".
+    En "Variables del sistema", busca la variable Path y haz clic en "Editar".
+    Agrega la ruta completa a la carpeta bin de JMeter (por ejemplo, C:\Herramientas\apache-jmeter-5.6.3\bin).
+    Acepta y cierra todas las ventanas.
+
+
+CREAR JMETER DASHBOARD
+
+**** Crear carpeta vacia para reporte ****
+
+1. Abrir Cmder
+2. Moverse a ruta: C:\Users\camilo.garzon\Documents\Performance Testing\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin
+3. Usar comando :
+    jmeter -n -t C:\Users\camilo.garzon\Documents\Performance Testing\apache-jmeter-5.6.3\Results\Test_Ejecucion_comandos.jmx -l C:\Users\camilo.garzon\Documents\Performance Testing\apache-jmeter-5.6.3\Results\Test_Ejecucion_comandos.csv -e -o C:\Users\camilo.garzon\Documents\Performance Testing\apache-jmeter-5.6.3\Results\reporte
+    jmeter -n -t "C:\Users\camilo.garzon\Documents\Performance Testing\apache-jmeter-5.6.3\Results\Test_Ejecucion_comandos.jmx" -l "C:\Users\camilo.garzon\Documents\Performance Testing\apache-jmeter-5.6.3\Results\Test_Ejecucion_comandos.csv" -e -o "C:\Users\camilo.garzon\Documents\Performance Testing\apache-jmeter-5.6.3\Results\reporte"
+    jmeter -n -t <test> -l <test log file> -e -o  <ruta de reporte>
+
+
+
+GENERAR DESDE CSV ANTERIOR
+
+**** Crear carpeta vacia para reporte ****
+
+1. Abrir Cmder
+2. Moverse a ruta: C:\Users\camilo.garzon\Documents\Performance Testing\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin
+3. Usar comando :
+    jmeter -g <ruta de reporte> -o <ruta de carpeta salida de reporte>
